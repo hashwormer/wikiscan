@@ -42,7 +42,7 @@ class MyClass:
         #正则匹配样例：password= “”、password “”、password=12345、<password>123</password>
             for q in alist:
                 url1='http://wiki.com'+q
-                houzui = re.findall(r"(\.txt|\.xml|\.csv|\.xsl|\.log|\.py|\.php)$",url1)
+                houzui = re.findall(r"(\.txt|\.xml|\.csv|\.xsl|\.log|\.py|\.php|\.go|\.java|\.jsp)$",url1)
                 if houzui:
                     keyword_suffix.append(url1)
                 else:
@@ -80,7 +80,7 @@ class MyClass:
             keywords0=[]
             keyword_suffix0=[]
             headers = {'cookie':'wiki.sso.cookie='}
-            houzhui = re.findall(r"(\.txt|\.xml|\.csv|\.xsl|\.log|\.py|\.php)$",wiki)
+            houzhui = re.findall(r"(\.txt|\.xml|\.csv|\.xsl|\.log|\.py|\.php|\.go|\.java|\.jsp)$",wiki)
             if houzhui:
                 keyword_suffix0.append(wiki)
             else:
