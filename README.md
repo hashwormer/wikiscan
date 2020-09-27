@@ -32,6 +32,9 @@ wikiscan v1.0 命令行参数方式执行：
 
 参数使用说明：-l 仅用于单页模式，-c 全局模式必填，单页模式无需填写
 
+for example： python3 ./wikiscan -c 200 （扫描搜索出来的200个结果页） 
+              python3 ./wikiscan -l http://your_wikidomain/pages/viewpage.action?pageId=1234567 (单页模式）
+
 程序更新列表
 
     v1.0 初始版本
